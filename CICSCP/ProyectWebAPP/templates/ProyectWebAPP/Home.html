@@ -1,14 +1,85 @@
+{% extends "ProyectWebAPP/Base.html" %}
+
 {% load tailwind_tags %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>        
+        {% block title %}
+            Inicio | PRUEBA HOME
+        {% endblock title %}
+    </title>
+
     {% tailwind_css %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+     
 </head>
-<body class="bg-gray-100 text-center p-8 ">
-    <h1 class="text-4xl font-bold text-green-600">¡Ryder Mariking!</h1>
-    <p class="mt-4 text-lg text-gray-700">Bienvenido al proyecto PegCICS</p>
+        {% block content %}
+
+    <header class="bg-white mt-5 py-20 shadow-xl rounded-lg mb-12 border-t-4 border-green-500">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-5xl font-extrabold text-gray-900 leading-tight">
+                Cooperando por la Salud y el Bienestar.
+            </h1>
+            <p class="mt-4 text-xl text-gray-600">
+                Tu centro de atención médica de confianza en Barquisimeto, con un espíritu cooperativo y humano.
+            </p>
+            
+            <a href="#" class="mt-8 inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 hover:bg-green-700 hover:shadow-xl transform hover:scale-105">
+                Agenda Tu Consulta Hoy
+            </a>
+        </div>
+    </header>
+
+    <section class="py-10">
+        <h2 class="text-3xl font-bold text-gray-900 mb-8 border-b-2 border-green-500 pb-2 inline-block">
+            Nuestros Principales Servicios
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <i class="fa-solid fa-user-doctor fa-3x text-green-600 mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Medicina General</h3>
+                <p class="text-gray-600">
+                    Consultas de salud integral para toda la familia. Prevención y chequeos anuales.
+                </p>
+                <a href="#" class="text-green-600 font-medium mt-3 inline-block hover:text-green-700">Ver más →</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <i class="fa-solid fa-stethoscope fa-3x text-green-600 mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Especialistas</h3>
+                <p class="text-gray-600">
+                    Acceso a pediatría, ginecología y cardiología bajo el modelo cooperativo.
+                </p>
+                <a href="#" class="text-green-600 font-medium mt-3 inline-block hover:text-green-700">Ver más →</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <i class="fa-solid fa-prescription-bottle-medical fa-3x text-green-600 mb-4"></i>
+                <h3 class="text-xl font-semibold text-gray-900 mb-2">Farmacia Cooperativa</h3>
+                <p class="text-gray-600">
+                    Medicamentos con precios justos y apoyo directo a la comunidad de Barquisimeto.
+                </p>
+                <a href="#" class="text-green-600 font-medium mt-3 inline-block hover:text-green-700">Ver más →</a>
+            </div>
+            
+        </div>
+    </section>
+
+    {% endblock content %}
+    
+
+        
+
+   
+
 </body>
 </html>
+
+{% comment %}
+    2. Contenido principal de la página (será inyectado en <main class="flex-grow">)
+{% endcomment %}
