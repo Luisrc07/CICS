@@ -1,0 +1,12 @@
+# Python / Django
+__pycache__/
+*.pyc
+*.sqlite3
+venv/
+
+# Node / Tailwind
+node_modules/
+package-lock.json
+
+# Tailwind CSS generado
+theme/static_src/output.css
