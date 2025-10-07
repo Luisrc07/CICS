@@ -21,4 +21,5 @@ from ProyectWebAPP import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('ProyectWebAPP.urls')),
+    path('', include('ServiciosAPP.urls')),
 ]
