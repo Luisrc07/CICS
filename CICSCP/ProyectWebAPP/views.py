@@ -10,8 +10,8 @@ def Servicios(request):
 def Tienda(request):
     return render(request, "ProyectWebAPP/Tienda.html")
 
-def Blog(request):
-    return render(request, "ProyectWebAPP/Blog.html")
+def Precios(request):
+    return render(request, "ProyectWebAPP/Precios.html")
 
 def Contacto(request):
     return render(request, "ProyectWebAPP/Contacto.html")

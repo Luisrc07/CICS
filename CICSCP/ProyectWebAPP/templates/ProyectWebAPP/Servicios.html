@@ -1,11 +1,17 @@
+{% extends "ProyectWebAPP/Base.html" %}
+{% load tailwind_tags %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{% block tittle %} SERVICIOS | {% endblock tittle %}</title>
 </head>
 <body>
-    <h1>Prueba</h1>
+    {% block nav %} SERVICIOS | SALUD {% endblock nav %}
+    <h1>Blog</h1>
+
 </body>
 </html>

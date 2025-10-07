@@ -7,15 +7,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>        
-        {% block title %}
-            Inicio | PRUEBA HOME
-        {% endblock title %}
+        {% block tittle %}
+            Salud | HOME
+        {% endblock tittle %}
     </title>
 
     {% tailwind_css %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
      
 </head>
+<body>
+    {% block nav %} HOME {% endblock nav %}
         {% block content %}
 
     <header class="bg-white mt-5 py-20 shadow-xl rounded-lg mb-12 border-t-4 border-green-500">
